@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lalit Kumar - Aspiring Software Developer, Front-End Enthusiast & Problem Solver. B.Tech Computer Science student at GLA University, Mathura.">
+    <meta name="keywords" content="Lalit Kumar, Portfolio, Software Developer, Front-End Developer, GLA University, Java Programmer, Web Developer, Resume, Projects">
+    <meta name="author" content="Lalit Kumar">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lalitkumar.dev">
+    <meta property="og:title" content="Lalit Kumar | Software Developer Portfolio">
+    <meta property="og:description" content="Aspiring Software Developer & Front-End Enthusiast. Explore my projects, skills, education, and achievements.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Lalit Kumar | Software Developer Portfolio">
+    <meta property="twitter:description" content="Aspiring Software Developer & Front-End Enthusiast. Explore my projects, skills, education, and achievements.">
+
+    <title>Lalit Kumar | Aspiring Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Devicon for Tech Stack Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span>L</span>
+                <span>K</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress" id="preloader-progress"></div>
+            </div>
+            <p class="preloader-text">Loading Experience...</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Lalit Kumar Home">
+                <span class="logo-accent">&lt;</span>LK<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#activities" class="nav-link">Co-Curriculars</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon dark-icon"></i>
+                    <i class="fa-solid fa-sun light-icon"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <canvas id="hero-particles" class="particles-canvas"></canvas>
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <p class="hero-intro reveal-on-scroll">Hello, my name is</p>
+                    <h1 class="hero-title reveal-on-scroll delay-1">Lalit Kumar</h1>
+                    <h2 class="hero-subtitle reveal-on-scroll delay-2">
+                        I'm a <span id="typewriter" class="typewriter-text"></span><span class="typewriter-cursor">|</span>
+                    </h2>
+                    <p class="hero-description reveal-on-scroll delay-3">
+                        Aspiring Software Developer and Front-End Enthusiast from Agra, India. Driven by problem-solving and crafting visually stunning, responsive, and user-centric digital experiences.
+                    </p>
+                    <div class="hero-ctas reveal-on-scroll delay-4">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Connect</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-badge-container reveal-on-scroll delay-3">
+                    <div class="hero-tech-sphere">
+                        <div class="sphere-icon item-1"><i class="devicon-java-plain"></i></div>
+                        <div class="sphere-icon item-2"><i class="devicon-javascript-plain"></i></div>
+                        <div class="sphere-icon item-3"><i class="devicon-html5-plain"></i></div>
+                        <div class="sphere-icon item-4"><i class="devicon-css3-plain"></i></div>
+                        <div class="sphere-icon item-5"><i class="devicon-python-plain"></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me section">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-info reveal-on-scroll delay-1">
+                        <p class="about-text">
+                            I am a third-year <strong>Bachelor of Technology in Computer Science</strong> student at <strong>GLA University, Mathura</strong>, expecting to graduate in <strong>June 2027</strong>. My academic journey has fueled a profound passion for front-end web development, clean coding practices, and competitive problem-solving.
+                        </p>
+                        <p class="about-text">
+                            Hailing from the historic city of Agra, I combine technical discipline with creative design. I love bridging the gap between robust back-end logic and engaging user interfaces, ensuring that every project is highly responsive, accessible, and fast.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <span class="stat-num">2027</span>
+                                <span class="stat-label">Graduation Year</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num">GLAU</span>
+                                <span class="stat-label">University</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num">5+</span>
+                                <span class="stat-label">Languages Learnt</span>
+                            </div>
+                        </div>
+
+                        <div class="about-ctas">
+                            <a href="#contact" class="btn btn-outline">
+                                <span>Get In Touch</span>
+                            </a>
+                            <!-- Placeholder resume download link -->
+                            <a href="tel:+917505405669" class="btn btn-text">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+91 7505405669</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-skills-showcase reveal-on-scroll delay-2">
+                        <div class="showcase-card">
+                            <h3>Key Highlights</h3>
+                            <div class="highlights-list">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon"><i class="fa-solid fa-code"></i></div>
+                                    <div class="highlight-details">
+                                        <h4>Front-End Development</h4>
+                                        <p>Creating modern layouts, animations, and accessible structures.</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                                    <div class="highlight-details">
+                                        <h4>Problem Solving</h4>
+                                        <p>Active solver on LeetCode, HackerRank, and CodingBlocks.</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                    <div class="highlight-details">
+                                        <h4>Academic Discipline</h4>
+                                        <p>B.Tech CS Student with strong core CS fundamentals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding section-bg">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Skills &amp; Toolkit</h2>
+                <p class="section-subtitle reveal-on-scroll">My technical skillset across programming languages, tools, frameworks, and academic concepts.</p>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-card reveal-on-scroll" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="skills-category-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>Languages</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="devicon-java-plain colored"></i> Java</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="devicon-html5-plain colored"></i> HTML5 / CSS3</span>
+                                    <span>Expert</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="devicon-python-plain colored"></i> Python</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="devicon-c-plain colored"></i> C Language</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Database & CS Core -->
+                    <div class="skills-card reveal-on-scroll delay-1" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="skills-category-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Database &amp; CS Core</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="devicon-mysql-plain colored"></i> SQL / DBMS</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="fa-solid fa-network-wired"></i> Computer Networks</span>
+                                    <span>Academic</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="fa-solid fa-desktop"></i> OS (Windows)</span>
+                                    <span>Proficient</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Problem Solving -->
+                    <div class="skills-card reveal-on-scroll delay-2" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="skills-category-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Problem Solving</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="fa-solid fa-code-compare"></i> LeetCode</span>
+                                    <span>Active</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="fa-brands fa-hackerrank colored"></i> HackerRank</span>
+                                    <span>Gold Badge</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">
+                                    <span><i class="fa-solid fa-brain"></i> CodingBlocks</span>
+                                    <span>Certified</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Education Timeline</h2>
+                
+                <div class="timeline">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 (GLA University) -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-date">June 2023 - Present</div>
+                        <div class="timeline-content" data-tilt>
+                            <div class="card-glow"></div>
+                            <h3>Bachelor of Technology in Computer Science</h3>
+                            <h4>GLA University, Mathura</h4>
+                            <p class="timeline-desc">Specializing in core computer science subjects including Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, and Computer Networks. Expected Graduation: June 2027.</p>
+                            <span class="timeline-badge">B.Tech</span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 (Intermediate) -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+                        <div class="timeline-date">Completed May 2023</div>
+                        <div class="timeline-content" data-tilt>
+                            <div class="card-glow"></div>
+                            <h3>Intermediate Education</h3>
+                            <h4>S.S. Public School, Agra</h4>
+                            <p class="timeline-desc">Completed Senior Secondary Education focused on Physics, Chemistry, and Mathematics (PCM). Developed a keen interest in computer science and programming fundamentals during this tenure.</p>
+                            <span class="timeline-badge">Grade XII</span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 (High School) -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="timeline-dot"><i class="fa-solid fa-book"></i></div>
+                        <div class="timeline-date">Completed May 2021</div>
+                        <div class="timeline-content" data-tilt>
+                            <div class="card-glow"></div>
+                            <h3>High School Education</h3>
+                            <h4>Kendriya Vidyalaya No. 3, Agra</h4>
+                            <p class="timeline-desc">Acquired strong foundational academic qualifications. Gained early exposure to computer literacy and logical problem solving, graduating with high academic marks.</p>
+                            <span class="timeline-badge">Grade X</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding section-bg">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Featured Projects</h2>
+                <p class="section-subtitle reveal-on-scroll">A showcase of some of my software and web development creations.</p>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: Spotify Clone -->
+                    <div class="project-card reveal-on-scroll" data-tilt>
+                        <div class="project-glow"></div>
+                        <div class="project-img-wrapper">
+                            <!-- Visual styling for project banner using CSS patterns -->
+                            <div class="project-img-placeholder spotify-bg">
+                                <div class="placeholder-overlay">
+                                    <i class="fa-brands fa-spotify"></i>
+                                    <span>Spotify Web Interface Clone</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3 (Vanilla)</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h3>Spotify Clone Website</h3>
+                            <p class="project-description">
+                                A visually accurate static clone of Spotify's web interface. Features structural sidebar navigation, album grid displays, an interactive play control bar, and full responsive layout fitting Spotify's classic dark-themed brand aesthetic.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/LalitKumar842005" target="_blank" rel="noopener noreferrer" class="project-btn btn-sec" aria-label="View Spotify Clone Source Code on GitHub">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                                <a href="#" class="project-btn btn-pri" aria-label="View Live Demo of Spotify Clone">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Project Placeholder 1 -->
+                    <div class="project-card reveal-on-scroll delay-1" data-tilt>
+                        <div class="project-glow"></div>
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder generic-bg-1">
+                                <div class="placeholder-overlay">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <span>Interactive Skill Board</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Data Structures</span>
+                            </div>
+                            <h3>DSA Practice Kit</h3>
+                            <p class="project-description">
+                                A compilation of interactive Java tools and algorithms solving structural problems. Includes visualizations of sorting methods, tree traversals, and dynamic array calculations.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/LalitKumar842005" target="_blank" rel="noopener noreferrer" class="project-btn btn-sec">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                                <a href="#" class="project-btn btn-pri">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Project Placeholder 2 -->
+                    <div class="project-card reveal-on-scroll delay-2" data-tilt>
+                        <div class="project-glow"></div>
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder generic-bg-2">
+                                <div class="placeholder-overlay">
+                                    <i class="fa-solid fa-database"></i>
+                                    <span>Database Management tool</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">DBMS</span>
+                                <span class="tag">Java FX</span>
+                            </div>
+                            <h3>Student Database Manager</h3>
+                            <p class="project-description">
+                                A desktop application utilizing SQL database endpoints to log student records, attendance details, and course registration marks. Built with transactional integrity features.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/LalitKumar842005" target="_blank" rel="noopener noreferrer" class="project-btn btn-sec">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                                <a href="#" class="project-btn btn-pri">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications Section -->
+        <section id="certifications" class="certifications section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Achievements &amp; Certifications</h2>
+                <p class="section-subtitle reveal-on-scroll">Professional and academic validation of my software engineering capabilities.</p>
+                
+                <div class="certifications-grid">
+                    <!-- Certification 1: Java by Infosys -->
+                    <div class="cert-card reveal-on-scroll" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3>Certified in Java Programming</h3>
+                        <p class="cert-issuer">Infosys Springboard</p>
+                        <p class="cert-desc">Recognized proficiency in core Java architectures, OOP, exception structures, multidimensional collections, and fundamental multithreading operations.</p>
+                        <div class="cert-meta">
+                            <span>Credential ID: Verified</span>
+                            <i class="fa-solid fa-circle-check verify-badge"></i>
+                        </div>
+                    </div>
+
+                    <!-- Certification 2: Problem Solving -->
+                    <div class="cert-card reveal-on-scroll delay-1" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h3>Problem Solving Gold Badge</h3>
+                        <p class="cert-issuer">HackerRank</p>
+                        <p class="cert-desc">Achieved high rank status in competitive algorithm benchmarks by consistently solving data structures and general reasoning algorithms.</p>
+                        <div class="cert-meta">
+                            <span>HackerRank Verified</span>
+                            <i class="fa-solid fa-circle-check verify-badge"></i>
+                        </div>
+                    </div>
+
+                    <!-- Certification 3: CodingBlocks -->
+                    <div class="cert-card reveal-on-scroll delay-2" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3>Programming Fundamentals</h3>
+                        <p class="cert-issuer">CodingBlocks</p>
+                        <p class="cert-desc">Rigorous programming curriculum focusing on computational design, complexity calculations (Big O notation), recursion, and memory management.</p>
+                        <div class="cert-meta">
+                            <span>CodingBlocks Certified</span>
+                            <i class="fa-solid fa-circle-check verify-badge"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Co-Curricular Activities Section -->
+        <section id="activities" class="activities section-padding section-bg">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Co-Curricular Activities</h2>
+                <p class="section-subtitle reveal-on-scroll">Engaging with the student community, sports, and cultural festivals.</p>
+                
+                <div class="activities-grid">
+                    <!-- Activity 1 -->
+                    <div class="activity-card reveal-on-scroll" data-tilt>
+                        <div class="activity-glow"></div>
+                        <div class="activity-icon"><i class="fa-solid fa-medal"></i></div>
+                        <h3>1st Runner-up, Entrevista 3.0</h3>
+                        <h4>GeeksforGeeks Student Chapter, GLAU</h4>
+                        <p>Secured high position in Entrevista 3.0, a rigorous mock recruitment drive evaluating technical coding solutions, logic analytics, and verbal communication rounds.</p>
+                    </div>
+
+                    <!-- Activity 2 -->
+                    <div class="activity-card reveal-on-scroll delay-1" data-tilt>
+                        <div class="activity-glow"></div>
+                        <div class="activity-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Fest Coordinator, SRIJAN</h3>
+                        <h4>GLA University Cultural Fest</h4>
+                        <p>Led coordination efforts for SRIJAN 2024 &amp; 2025. Supervised volunteer scheduling, team communications, and resource distribution for key campus events.</p>
+                    </div>
+
+                    <!-- Activity 3 -->
+                    <div class="activity-card reveal-on-scroll delay-2" data-tilt>
+                        <div class="activity-glow"></div>
+                        <div class="activity-icon"><i class="fa-solid fa-volleyball"></i></div>
+                        <h3>Winner, Volleyball Competition</h3>
+                        <h4>Gladiators &amp; Aagaaz Sports Fests</h4>
+                        <p>Active team player. Won volleyball competitions and participated across GLA Gladiators Cup (Oct 2024 &amp; Apr 2025) and Aagaaz Fest (Feb 2025).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Get In Touch</h2>
+                <p class="section-subtitle reveal-on-scroll">Have a question or want to work together? Drop me a message!</p>
+                
+                <div class="contact-grid">
+                    <!-- Contact Information Cards -->
+                    <div class="contact-info-panel reveal-on-scroll">
+                        <div class="info-card" data-tilt>
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-text">
+                                <h3>Email Me</h3>
+                                <a href="mailto:lalitkumar842005@gmail.com">lalitkumar842005@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card" data-tilt>
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text">
+                                <h3>Call Me</h3>
+                                <a href="tel:+917505405669">+91 7505405669</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card" data-tilt>
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <h3>My Location</h3>
+                                <p>Agra, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper reveal-on-scroll delay-1">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <div class="input-container">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <input type="text" id="form-name" placeholder="Enter your name" required>
+                                </div>
+                                <span class="error-msg" id="name-error">Name is required</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <div class="input-container">
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <input type="email" id="form-email" placeholder="Enter your email" required>
+                                </div>
+                                <span class="error-msg" id="email-error">Please enter a valid email</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <div class="input-container">
+                                    <i class="fa-solid fa-comment input-icon message-icon"></i>
+                                    <textarea id="form-message" rows="5" placeholder="Enter your message" required></textarea>
+                                </div>
+                                <span class="error-msg" id="message-error">Message cannot be empty</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-accent">&lt;</span>LK<span class="logo-accent"> /&gt;</span>
+                </a>
+                <p>Aspiring Software Developer crafting modern interactive experiences.</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/lalit-kumar842005" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/LalitKumar842005" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:lalitkumar842005@gmail.com" aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+917505405669" aria-label="Phone Contact"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lalit Kumar. All rights reserved.</p>
+                <p>Made with <i class="fa-solid fa-heart footer-heart"></i> by Lalit Kumar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
